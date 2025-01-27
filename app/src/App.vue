@@ -1,10 +1,8 @@
-<script setup lang="ts">
-import LoginBox from './components/LoginForm.vue'
-</script>
+<script setup lang="ts"></script>
 
 <template>
   <body>
-    <LoginBox />
+    <router-view />
   </body>
 </template>
 
