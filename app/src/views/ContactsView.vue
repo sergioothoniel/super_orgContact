@@ -94,7 +94,6 @@ export default {
   },
   watch: {
     connections(newConections: IConection[]) {
-      console.log(newConections)
       this.generateDataFromConections(newConections)
     }
   },
@@ -125,7 +124,7 @@ export default {
             headers: { 'Content-Type': 'application/json' }
           }
         )
-        console.log(contactsResponse.data)
+
         this.$data.connections = JSON.parse(contactsResponse.data).connections
       } catch (error) {
         console.error('Erro ao processar requisição:', error)
